@@ -28,7 +28,7 @@ assumptions = {
     'Type I (False Positive) Error Rate': 0.05,
 }
 
-tea.data(data_path)
+tea.data(data_path, key="id")
 tea.define_variables(variables)
 tea.define_study_design(study_design)
 tea.assume(assumptions)
